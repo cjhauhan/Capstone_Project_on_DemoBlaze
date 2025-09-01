@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-01T08:58:32 IST" name="DemoBlazeSuite" finished-at="2025-09-01T08:59:57 IST" duration-ms="84349">
+    <groups>
+    </groups>
+    <test started-at="2025-09-01T08:58:32 IST" name="Functional Tests" finished-at="2025-09-01T08:59:57 IST" duration-ms="84349">
+      <class name="test.WrongPasswordTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.WrongPasswordTest@5876a9af]" started-at="2025-09-01T08:59:19 IST" name="setUp" finished-at="2025-09-01T08:59:21 IST" duration-ms="1235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.WrongPasswordTest.loginWithWrongPassword() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithWrongPassword()[pri:0, instance:test.WrongPasswordTest@5876a9af]" started-at="2025-09-01T08:59:21 IST" name="loginWithWrongPassword" description="Login with wrong password and close browser" finished-at="2025-09-01T08:59:27 IST" duration-ms="6515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.WrongPasswordTest@5876a9af]" started-at="2025-09-01T08:59:27 IST" name="tearDown" finished-at="2025-09-01T08:59:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithWrongPassword status=SUCCESS method=WrongPasswordTest.loginWithWrongPassword()[pri:0, instance:test.WrongPasswordTest@5876a9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.WrongPasswordTest -->
+      <class name="test.SignupLoginLogoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.SignupLoginLogoutTest@59309333]" started-at="2025-09-01T08:58:50 IST" name="setUp" finished-at="2025-09-01T08:58:52 IST" duration-ms="1300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.SignupLoginLogoutTest.signupLoginAndLogout() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signupLoginAndLogout()[pri:0, instance:test.SignupLoginLogoutTest@59309333]" started-at="2025-09-01T08:58:52 IST" name="signupLoginAndLogout" description="Sign up a unique user, login and then logout (stable - doesn&#039;t require pre-created user)" finished-at="2025-09-01T08:59:19 IST" duration-ms="27287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupLoginAndLogout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.SignupLoginLogoutTest@59309333]" started-at="2025-09-01T08:59:19 IST" name="tearDown" finished-at="2025-09-01T08:59:19 IST" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signupLoginAndLogout status=SUCCESS method=SignupLoginLogoutTest.signupLoginAndLogout()[pri:0, instance:test.SignupLoginLogoutTest@59309333] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.SignupLoginLogoutTest -->
+      <class name="test.PlaceOrderTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.PlaceOrderTest@5b239d7d]" started-at="2025-09-01T08:59:43 IST" name="setUp" finished-at="2025-09-01T08:59:44 IST" duration-ms="1078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.PlaceOrderTest.placeOrderSuccessfully()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="placeOrderSuccessfully()[pri:0, instance:test.PlaceOrderTest@5b239d7d]" started-at="2025-09-01T08:59:44 IST" name="placeOrderSuccessfully" description="Place order and verify confirmation" finished-at="2025-09-01T08:59:56 IST" duration-ms="12040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderSuccessfully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.PlaceOrderTest@5b239d7d]" started-at="2025-09-01T08:59:56 IST" name="tearDown" finished-at="2025-09-01T08:59:57 IST" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeOrderSuccessfully status=SUCCESS method=PlaceOrderTest.placeOrderSuccessfully()[pri:0, instance:test.PlaceOrderTest@5b239d7d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.PlaceOrderTest -->
+      <class name="test.AddToCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.AddToCartTest@7ec7ffd3]" started-at="2025-09-01T08:59:27 IST" name="setUp" finished-at="2025-09-01T08:59:28 IST" duration-ms="1330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.AddToCartTest.addPhoneAndLaptopToCart()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addPhoneAndLaptopToCart()[pri:0, instance:test.AddToCartTest@7ec7ffd3]" started-at="2025-09-01T08:59:28 IST" name="addPhoneAndLaptopToCart" description="Add phone and laptop to cart, then verify both exist" finished-at="2025-09-01T08:59:43 IST" duration-ms="14479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPhoneAndLaptopToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.AddToCartTest@7ec7ffd3]" started-at="2025-09-01T08:59:43 IST" name="tearDown" finished-at="2025-09-01T08:59:43 IST" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addPhoneAndLaptopToCart status=SUCCESS method=AddToCartTest.addPhoneAndLaptopToCart()[pri:0, instance:test.AddToCartTest@7ec7ffd3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AddToCartTest -->
+      <class name="test.SignupLoginTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:test.SignupLoginTest@7b9a4292]" started-at="2025-09-01T08:58:32 IST" name="startReport" finished-at="2025-09-01T08:58:32 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.SignupLoginTest@7b9a4292]" started-at="2025-09-01T08:58:32 IST" name="setUp" finished-at="2025-09-01T08:58:37 IST" duration-ms="4493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.SignupLoginTest.signupAndLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signupAndLogin()[pri:0, instance:test.SignupLoginTest@7b9a4292]" started-at="2025-09-01T08:58:37 IST" name="signupAndLogin" description="Sign up a new user and verify login" finished-at="2025-09-01T08:58:49 IST" duration-ms="11820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupAndLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.SignupLoginTest@7b9a4292]" started-at="2025-09-01T08:58:49 IST" name="tearDown" finished-at="2025-09-01T08:58:50 IST" duration-ms="1816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signupAndLogin status=SUCCESS method=SignupLoginTest.signupAndLogin()[pri:0, instance:test.SignupLoginTest@7b9a4292] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:test.SignupLoginTest@7b9a4292]" started-at="2025-09-01T08:59:57 IST" name="flushReport" finished-at="2025-09-01T08:59:57 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- test.SignupLoginTest -->
+    </test> <!-- Functional Tests -->
+  </suite> <!-- DemoBlazeSuite -->
+</testng-results>
