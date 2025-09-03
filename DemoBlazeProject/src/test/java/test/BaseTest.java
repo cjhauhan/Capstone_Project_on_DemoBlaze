@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -84,6 +86,12 @@ public class BaseTest {
 				EdgeOptions options = new EdgeOptions();
 				options.addArguments("--start-maximized");
 				driver = new EdgeDriver(options);
+			} else if (browser.equalsIgnoreCase("firefox")) {
+				System.out.println(">>> Setting up FirefoxDriver...");
+				WebDriverManager.firefoxdriver().setup();
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--start-maximized");
+				driver = new FirefoxDriver(options);
 			} else {
 				System.out.println(">>> Setting up ChromeDriver...");
 				WebDriverManager.chromedriver().setup();
@@ -101,7 +109,9 @@ public class BaseTest {
 				tlTest.set(test);
 			}
 
-		} catch (Exception e) {
+		} catch (
+
+		Exception e) {
 			e.printStackTrace();
 			throw new RuntimeException("Failed to initialize WebDriver for browser: " + browser, e);
 		}

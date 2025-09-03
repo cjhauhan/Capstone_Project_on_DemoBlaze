@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [DemoBlazeSuite]" guice-stage="DEVELOPMENT" verbose="0">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="edge"/>
   <test thread-count="5" name="Functional Tests(failed)" verbose="0">
     <classes>
       <class name="test.AddToCartTest">
@@ -13,6 +13,42 @@
           <include name="flushReport"/>
         </methods>
       </class> <!-- test.AddToCartTest -->
+      <class name="test.PlaceOrderTest">
+        <methods>
+          <include name="startReport"/>
+          <include name="tearDown"/>
+          <include name="placeOrderSuccessfully"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- test.PlaceOrderTest -->
+      <class name="test.SignupLoginLogoutTest">
+        <methods>
+          <include name="startReport"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="signupLoginAndLogout"/>
+        </methods>
+      </class> <!-- test.SignupLoginLogoutTest -->
+      <class name="test.SignupLoginTest">
+        <methods>
+          <include name="startReport"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="signupAndLogin"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- test.SignupLoginTest -->
+      <class name="test.WrongPasswordTest">
+        <methods>
+          <include name="startReport"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="loginWithWrongPassword"/>
+        </methods>
+      </class> <!-- test.WrongPasswordTest -->
     </classes>
   </test> <!-- Functional Tests(failed) -->
 </suite> <!-- Failed suite [DemoBlazeSuite] -->

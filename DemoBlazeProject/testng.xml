@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="DemoBlazeSuite" parallel="false">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <test name="Functional Tests">
         <classes>
             <class name="test.SignupLoginTest"/>

@@ -27,6 +27,7 @@ public class SignupLoginLogoutTest extends BaseTest {
 
         // logout and verify logout is not visible anymore
         getDriver().findElement(By.id("logout2")).click();
+        Thread.sleep(1000);
         Assert.assertFalse(home.isLogoutVisible(), "Logout should disappear after signing out");
         System.out.println("Checked login and logout");
     }

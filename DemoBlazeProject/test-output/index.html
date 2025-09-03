@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-DemoBlazeSuite" class="navigator-link ">
-                    <span>C:\Users\hp\eclipse-workspace\DemoBlazeProject\testng.xml</span>
+                    <span>C:\Users\hp\git\repository4\DemoBlazeProject\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -226,14 +226,14 @@
         </div> <!-- panel DemoBlazeSuite -->
         <div panel-name="test-xml-DemoBlazeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\eclipse-workspace\DemoBlazeProject\testng.xml</span>
+            <span class="header-content">C:\Users\hp\git\repository4\DemoBlazeProject\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;DemoBlazeSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Functional Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.SignupLoginTest&quot;/&gt;
@@ -284,23 +284,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'signupLoginAndLogout')
 data.setCell(0, 2, 'test.SignupLoginLogoutTest')
-data.setCell(0, 3, 27007);
+data.setCell(0, 3, 29804);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addPhoneAndLaptopToCart')
-data.setCell(1, 2, 'test.AddToCartTest')
-data.setCell(1, 3, 11965);
+data.setCell(1, 1, 'placeOrderSuccessfully')
+data.setCell(1, 2, 'test.PlaceOrderTest')
+data.setCell(1, 3, 13802);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signupAndLogin')
-data.setCell(2, 2, 'test.SignupLoginTest')
-data.setCell(2, 3, 11485);
+data.setCell(2, 1, 'addPhoneAndLaptopToCart')
+data.setCell(2, 2, 'test.AddToCartTest')
+data.setCell(2, 3, 11536);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'placeOrderSuccessfully')
-data.setCell(3, 2, 'test.PlaceOrderTest')
-data.setCell(3, 3, 11282);
+data.setCell(3, 1, 'signupAndLogin')
+data.setCell(3, 2, 'test.SignupLoginTest')
+data.setCell(3, 3, 11393);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginWithWrongPassword')
 data.setCell(4, 2, 'test.WrongPasswordTest')
-data.setCell(4, 3, 7181);
+data.setCell(4, 3, 7119);
 window.suiteTableData['DemoBlazeSuite']= { tableData: data, tableDiv: 'times-div-DemoBlazeSuite'}
 return data;
 }
@@ -373,83 +373,83 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, public void test.SignupLoginTest.signupAndLogin())</span>
-                <span class="method-start">1004 ms</span>
+                <span class="method-name">setUp(edge, public void test.SignupLoginTest.signupAndLogin())</span>
+                <span class="method-start">545 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signupAndLogin</span>
-                <span class="method-start">5824 ms</span>
+                <span class="method-start">3893 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=signupAndLogin status=SUCCESS method=SignupLoginTest.signupAndLogin()[pri:0, instan...)</span>
-                <span class="method-start">17314 ms</span>
+                <span class="method-start">15295 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.SignupLoginLogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, public void test.SignupLoginLogoutTest.signupLoginAndLogout() throws java.lang.InterruptedEx...)</span>
-                <span class="method-start">17645 ms</span>
+                <span class="method-name">setUp(edge, public void test.SignupLoginLogoutTest.signupLoginAndLogout() throws java.lang.InterruptedExce...)</span>
+                <span class="method-start">15971 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signupLoginAndLogout</span>
-                <span class="method-start">18784 ms</span>
+                <span class="method-start">17259 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=signupLoginAndLogout status=SUCCESS method=SignupLoginLogoutTest.signupLoginAndLogo...)</span>
-                <span class="method-start">45795 ms</span>
+                <span class="method-start">47066 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.WrongPasswordTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, public void test.WrongPasswordTest.loginWithWrongPassword() throws java.lang.InterruptedExce...)</span>
-                <span class="method-start">46202 ms</span>
+                <span class="method-name">setUp(edge, public void test.WrongPasswordTest.loginWithWrongPassword() throws java.lang.InterruptedExcept...)</span>
+                <span class="method-start">47511 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithWrongPassword</span>
-                <span class="method-start">47354 ms</span>
+                <span class="method-start">48977 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginWithWrongPassword status=SUCCESS method=WrongPasswordTest.loginWithWrongPasswo...)</span>
-                <span class="method-start">54536 ms</span>
+                <span class="method-start">56098 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, public void test.AddToCartTest.addPhoneAndLaptopToCart())</span>
-                <span class="method-start">54538 ms</span>
+                <span class="method-name">setUp(edge, public void test.AddToCartTest.addPhoneAndLaptopToCart())</span>
+                <span class="method-start">56103 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addPhoneAndLaptopToCart</span>
-                <span class="method-start">55732 ms</span>
+                <span class="method-start">57931 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addPhoneAndLaptopToCart status=SUCCESS method=AddToCartTest.addPhoneAndLaptopToCart...)</span>
-                <span class="method-start">67700 ms</span>
+                <span class="method-start">69485 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.PlaceOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, public void test.PlaceOrderTest.placeOrderSuccessfully())</span>
-                <span class="method-start">68106 ms</span>
+                <span class="method-name">setUp(edge, public void test.PlaceOrderTest.placeOrderSuccessfully())</span>
+                <span class="method-start">70006 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">placeOrderSuccessfully</span>
-                <span class="method-start">69130 ms</span>
+                <span class="method-start">71573 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=placeOrderSuccessfully status=SUCCESS method=PlaceOrderTest.placeOrderSuccessfully(...)</span>
-                <span class="method-start">80415 ms</span>
+                <span class="method-start">85392 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.SignupLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">82426 ms</span>
+                <span class="method-start">86130 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
