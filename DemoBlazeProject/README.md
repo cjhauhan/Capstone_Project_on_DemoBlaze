@@ -1,40 +1,117 @@
-# DemoBlaze Capstone Selenium Project
+# Demoblaze Capstone Project 🚀
 
-## Overview
-This project automates 5 core test cases for the [DemoBlaze](https://www.demoblaze.com) web application using:
-- Selenium WebDriver
-- TestNG Framework
-- ExtentReports for reporting
-- WebDriverManager for driver handling
+Automation framework built on the [Demoblaze](https://www.demoblaze.com/) demo e-commerce site.  
+Covers **signup, login, product browsing, cart operations, and checkout** using Selenium + TestNG.
 
-## Test Cases Included
-1. **Signup & Login Test**
-2. **Signup, Login & Logout Test**
-3. **Wrong Password Test**
-4. **Add to Cart Test**
-5. **Place Order Test**
+---
 
-## Setup Instructions
-1. Clone or download the project.
-2. Import into **Eclipse** or **IntelliJ** as a Maven project.
-3. Run `mvn clean test` or directly run `testng.xml`.
+## 📌 Overview
+This project demonstrates:
+- Professional **Page Object Model (POM)** design
+- Robust **TestNG framework** integration
+- **Cross-browser testing** with Chrome & Firefox
+- **ExtentReports** for reporting
 
-## Cross Browser Testing
-Supported browsers:
-- Chrome (default)
-- Edge
+---
 
-You can change the browser in `testng.xml`:
-```xml
-<parameter name="browser" value="chrome"/>
+## 🛠️ Tech Stack
+- **Language:** Java  
+- **Automation Tool:** Selenium WebDriver  
+- **Testing Framework:** TestNG  
+- **Build Tool:** Maven  
+- **Reporting:** ExtentReports  
+
+---
+
+## 📂 Project Structure
+
 ```
-or
-```xml
-<parameter name="browser" value="edge"/>
+Capstone_DemoBlaze/
+├─ pom.xml
+├─ README.md
+├─ testng.xml
+├─ src
+│  ├─ main/java/com/demoblaze/pages
+│  │  ├─ BasePage.java
+│  │  ├─ HomePage.java
+│  │  ├─ LoginPage.java
+│  │  ├─ ProductPage.java
+│  │  ├─ CartPage.java
+│  │  └─ components/
+│  │     └─ ModalsPage.java
+│  │
+│  └─ test/java/com/demoblaze/tests
+│     ├─ base/
+│     │  └─ BaseTest.java
+│     ├─ auth/
+│     │  ├─ SignupLoginTest.java              # Create new user & login
+│     │  ├─ SignupLoginLogoutTest.java        # Login & logout flow
+│     │  ├─ DuplicateSignupTest.java          # Validate duplicate user signup
+│     │  ├─ EmptyLoginValidationTest.java     # Login with empty fields
+│     │  └─ WrongPasswordTest.java            # Login with wrong password
+│     ├─ product/
+│     │  └─ ProductDetailsTest.java           # Validate product details
+│     ├─ cart/
+│     │  ├─ AddToCartTest.java                # Add phone + laptop to cart
+│     │  ├─ DeleteSpecificItemTest.java       # Delete one item & verify total
+│     │  └─ CartPersistenceOnRefreshTest.java # Validate cart persistence
+│     └─ checkout/
+│        ├─ PlaceOrderTest.java               # Successful order placement
+│        └─ CheckoutNegativeTest.java         # Checkout with missing fields
+│
+└─ reports/                                   # Generated test reports
 ```
 
-## Reports
-After execution, an Extent HTML report is generated under:
+---
+
+## 🔄 Test Execution Flow
+
+1. **Authentication**  
+   - Signup → Login → Logout  
+   - Negative login cases (duplicate signup, empty fields, wrong password)
+
+2. **Product Check**  
+   - Validate product details page
+
+3. **Cart Operations**  
+   - Add to cart  
+   - Delete item & validate totals  
+   - Persistence across refresh
+
+4. **Checkout**  
+   - Place valid order  
+   - Negative checkout flow
+
+---
+
+## ⚙️ How to Run
+
+### From IDE
+- Import project as **Maven Project**  
+- Right-click `testng.xml` → **Run As → TestNG Suite**
+
+### From CLI
+```bash
+mvn clean test -DsuiteXmlFile=testng.xml
 ```
-reports/extent/ExtentReport.html
-```
+
+---
+
+## 🌐 Cross-Browser Testing
+- `testng.xml` defines two `<test>` blocks:
+  - One for **Chrome**
+  - One for **Firefox**
+- `BaseTest` reads the `browser` parameter and launches the correct driver.
+
+---
+
+## 📊 Reporting
+- Reports generated using **ExtentReports**  
+- Location: `test-output/ExtentReports.html`  
+- Provides pass/fail summary, screenshots (if configured), and logs  
+
+---
+
+## 🙋 Author
+**Rohan Chauhan**  
+Capstone project for Wipro NGA Training

@@ -40,38 +40,6 @@ public class BaseTest {
 		extent.attachReporter(spark);
 	}
 
-//    @Parameters({"browser"})
-//    @BeforeMethod(alwaysRun = true)
-//    public void setUp(@Optional("chrome") String browser, Method method) {
-//        WebDriver driver;
-//
-//        try {
-//            if (browser.equalsIgnoreCase("edge")) {
-//                WebDriverManager.edgedriver().setup();
-//                EdgeOptions options = new EdgeOptions();
-//                options.addArguments("--start-maximized");
-//                driver = new EdgeDriver(options);
-//            } else {
-//            	WebDriverManager.edgedriver().browserVersion("139.0.3405.125").setup();
-//            	EdgeOptions options = new EdgeOptions();
-//            	options.addArguments("--start-maximized");
-//            	driver = new EdgeDriver(options);
-//
-//            }
-//
-//            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-//            tlDriver.set(driver);
-//
-//            // create Extent test after extent is initialized
-//            if (extent != null) {
-//                ExtentTest test = extent.createTest(method.getDeclaringClass().getSimpleName() + "::" + method.getName());
-//                tlTest.set(test);
-//            }
-//
-//        } catch (Exception e) {
-//            throw new RuntimeException("Failed to initialize WebDriver for browser: " + browser, e);
-//        }
-//    }
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({ "browser" })
 	public void setUp(@Optional("chrome") String browser, Method method) {
@@ -79,14 +47,15 @@ public class BaseTest {
 
 		WebDriver driver;
 		try {
-			if (browser.equalsIgnoreCase("edge")) {
-				System.out.println(">>> Using manually downloaded EdgeDriver...");
-				System.setProperty("webdriver.edge.driver",
-						"C:\\Users\\hp\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
-				EdgeOptions options = new EdgeOptions();
-				options.addArguments("--start-maximized");
-				driver = new EdgeDriver(options);
-			} else if (browser.equalsIgnoreCase("firefox")) {
+//			if (browser.equalsIgnoreCase("edge")) {
+//				System.out.println(">>> Using manually downloaded EdgeDriver...");
+//				System.setProperty("webdriver.edge.driver",
+//						"C:\\Users\\hp\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
+//				EdgeOptions options = new EdgeOptions();
+//				options.addArguments("--start-maximized");
+//				driver = new EdgeDriver(options);
+//			} else
+			if (browser.equalsIgnoreCase("firefox")) {
 				System.out.println(">>> Setting up FirefoxDriver...");
 				WebDriverManager.firefoxdriver().setup();
 				FirefoxOptions options = new FirefoxOptions();
