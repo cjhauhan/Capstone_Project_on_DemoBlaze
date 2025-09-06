@@ -11,10 +11,10 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(25));
     }
 
-    protected WebElement $(By locator) {
+    protected WebElement find(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
@@ -23,14 +23,18 @@ public class BasePage {
     }
 
     protected void type(By locator, String text) {
-        WebElement el = $(locator);
+        WebElement el = find(locator);
         el.clear();
         el.sendKeys(text);
     }
 
+    protected String getText(By locator) {
+        return find(locator).getText();
+    }
+
     protected boolean isVisible(By locator) {
         try {
-            return $(locator).isDisplayed();
+            return find(locator).isDisplayed();
         } catch (TimeoutException e) {
             return false;
         }

@@ -47,14 +47,6 @@ public class BaseTest {
 
 		WebDriver driver;
 		try {
-//			if (browser.equalsIgnoreCase("edge")) {
-//				System.out.println(">>> Using manually downloaded EdgeDriver...");
-//				System.setProperty("webdriver.edge.driver",
-//						"C:\\Users\\hp\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
-//				EdgeOptions options = new EdgeOptions();
-//				options.addArguments("--start-maximized");
-//				driver = new EdgeDriver(options);
-//			} else
 			if (browser.equalsIgnoreCase("firefox")) {
 				System.out.println(">>> Setting up FirefoxDriver...");
 				WebDriverManager.firefoxdriver().setup();
