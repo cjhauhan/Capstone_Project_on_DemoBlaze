@@ -6,7 +6,7 @@ Built with Java · Selenium WebDriver · TestNG · Maven · ExtentReports · Exc
 
 I have also added the **Capstone Project Presentation (PPT)** in this repository.  
 To view/download it:
-1. Open the file: [Capstone Project PPT](./DemoBlaze_Capstone_project._Rohan_Chauhan.pptx)
+1. Open the file:DemoBlaze_Capstone_project._Rohan_Chauhan (1).pptx
 2. Click on **"View raw"**.
 3. The PPT will start downloading automatically.
 
